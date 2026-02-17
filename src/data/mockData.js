@@ -358,7 +358,7 @@ export const MOCK_REGISTRATIONS = [
 
 // Event information
 export const EVENT_INFO = {
-  name: 'National University Olympiad 2026',
+  name: 'AKU Sports Olympiad 2026',
   tagline: 'Compete. Excel. Triumph.',
   description: 'Hosted by Aga Khan University, Karachi. The premier inter-university sports championship bringing together the best athletic talent from across Pakistan.',
   startDate: '2026-03-15',

@@ -297,10 +297,10 @@ function HeroSection({ navigate }) {
               {/* Headline */}
               <motion.div variants={fadeUp}>
                 <h1 className="font-display text-white leading-none mb-2" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)' }}>
-                  NATIONAL
+                  AKU
                 </h1>
                 <h1 className="font-display leading-none mb-2" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)', color: '#45ae86' }}>
-                  UNIVERSITY
+                  SPORTS
                 </h1>
                 <h1 className="font-display text-white leading-none" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)' }}>
                   OLYMPIAD

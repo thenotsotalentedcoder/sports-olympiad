@@ -62,7 +62,7 @@ export const downloadInvoicePDF = (registration) => {
   <div class="container">
     <div class="header">
       <div class="aku-logo">AGA KHAN UNIVERSITY</div>
-      <h1>National University Olympiad 2026</h1>
+      <h1>AKU SPORTS Olympiad 2026</h1>
       <p>Registration Invoice</p>
     </div>
 
@@ -104,7 +104,7 @@ export const downloadInvoicePDF = (registration) => {
   </div>
 
     <div class="footer">
-      <p>Thank you for participating in National University Olympiad 2026!</p>
+      <p>Thank you for participating in AKU Sports Olympiad 2026!</p>
       <p>Hosted by Aga Khan University, Karachi</p>
       <p>For queries, contact: info@olympiad.pk | +92-51-1234567</p>
     </div>

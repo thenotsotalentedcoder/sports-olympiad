@@ -94,7 +94,7 @@ function SportModal({ sport, onClose }) {
 
       {/* Panel */}
       <motion.div
-        className="relative bg-white rounded-t-3xl sm:rounded-3xl w-full sm:max-w-lg shadow-card-xl overflow-hidden"
+        className="relative bg-white rounded-t-3xl sm:rounded-3xl w-full sm:max-w-lg shadow-card-xl overflow-y-auto max-h-[92vh] sm:max-h-[88vh]"
         initial={{ y: 60, opacity: 0, scale: 0.97 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         exit={{ y: 40, opacity: 0, scale: 0.97 }}

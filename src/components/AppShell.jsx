@@ -24,12 +24,12 @@ export default function AppShell({ user, children, breadcrumb }) {
               className="flex items-center gap-2.5 flex-shrink-0 group cursor-pointer"
               aria-label="Go to dashboard"
             >
-              <div className="w-8 h-8 bg-aku-600 rounded-xl flex items-center justify-center group-hover:bg-aku-700 transition-colors duration-200">
+              <div className="w-8 h-8 bg-gold-600 rounded-xl flex items-center justify-center group-hover:bg-gold-700 transition-colors duration-200">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <span className="font-display text-base text-surface-900 group-hover:text-aku-700 transition-colors duration-200 hidden sm:inline">
+              <span className="font-display text-base text-surface-900 group-hover:text-gold-700 transition-colors duration-200 hidden sm:inline">
                 AKU OLYMPIAD
               </span>
             </button>
@@ -46,7 +46,7 @@ export default function AppShell({ user, children, breadcrumb }) {
           {/* Right */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-surface-50 border border-surface-200 rounded-full">
-              <div className={`w-5 h-5 rounded-full flex items-center justify-center text-white text-2xs font-bold ${isAdmin ? 'bg-amber-500' : 'bg-aku-600'}`}>
+              <div className={`w-5 h-5 rounded-full flex items-center justify-center text-white text-2xs font-bold ${isAdmin ? 'bg-amber-500' : 'bg-gold-600'}`}>
                 {initials[0]}
               </div>
               <span className="text-xs font-semibold text-surface-700 max-w-[140px] truncate">

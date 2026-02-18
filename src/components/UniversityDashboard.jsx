@@ -37,7 +37,7 @@ export default function UniversityDashboard() {
     { label: 'Total',     value: registrations.length,                                        color: 'text-surface-900', icon: '📋' },
     { label: 'Drafts',    value: registrations.filter(r => r.status === 'draft').length,      color: 'text-surface-500', icon: '✏️' },
     { label: 'Submitted', value: registrations.filter(r => r.status === 'submitted').length,  color: 'text-blue-600',    icon: '📤' },
-    { label: 'Verified',  value: registrations.filter(r => r.status === 'verified').length,   color: 'text-aku-600',     icon: '✅' },
+    { label: 'Verified',  value: registrations.filter(r => r.status === 'verified').length,   color: 'text-gold-600',     icon: '✅' },
   ];
 
   const totalPlayers = registrations.reduce((s, r) => s + Object.values(r.players).flat().length, 0);
@@ -213,7 +213,7 @@ export default function UniversityDashboard() {
                         {reg.status === 'verified' && (
                           <button
                             onClick={() => downloadInvoicePDF(reg)}
-                            className="btn btn-sm bg-aku-600 text-white hover:bg-aku-700 active:scale-[0.97]"
+                            className="btn btn-sm bg-gold-600 text-white hover:bg-gold-700 active:scale-[0.97]"
                           >
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

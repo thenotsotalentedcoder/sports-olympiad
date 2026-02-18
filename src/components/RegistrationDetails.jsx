@@ -60,7 +60,7 @@ export default function RegistrationDetails() {
               {reg.status.charAt(0).toUpperCase() + reg.status.slice(1)}
             </span>
             {reg.status === 'verified' && (
-              <button onClick={() => downloadInvoicePDF(reg)} className="btn btn-sm bg-aku-600 text-white hover:bg-aku-700 active:scale-[0.97]">
+              <button onClick={() => downloadInvoicePDF(reg)} className="btn btn-sm bg-gold-600 text-white hover:bg-gold-700 active:scale-[0.97]">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
@@ -147,7 +147,7 @@ export default function RegistrationDetails() {
                                 <button onClick={() => setZoomImg(img.src)} className="block w-full cursor-zoom-in" aria-label={`View ${img.label}`}>
                                   <img
                                     src={img.src} alt={img.label}
-                                    className="w-full h-28 object-cover rounded-xl border border-surface-200 hover:border-aku-400 hover:shadow-card-md transition-all duration-200"
+                                    className="w-full h-28 object-cover rounded-xl border border-surface-200 hover:border-gold-400 hover:shadow-card-md transition-all duration-200"
                                   />
                                 </button>
                               </div>
@@ -188,7 +188,7 @@ export default function RegistrationDetails() {
                 <div className="pt-3">
                   <div className="flex justify-between items-center">
                     <span className="text-surface-500 text-sm">Total Fee</span>
-                    <span className="font-display text-2xl text-aku-700 leading-none">PKR {reg.totalAmount?.toLocaleString()}</span>
+                    <span className="font-display text-2xl text-gold-700 leading-none">PKR {reg.totalAmount?.toLocaleString()}</span>
                   </div>
                 </div>
               </div>

@@ -146,8 +146,8 @@ function SportModal({ sport, onClose }) {
           {/* Field & Duration */}
           <div className="grid grid-cols-2 gap-3">
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-xl bg-aku-600/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-4 h-4 text-aku-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <div className="w-8 h-8 rounded-xl bg-gold-600/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-gold-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
@@ -157,8 +157,8 @@ function SportModal({ sport, onClose }) {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-xl bg-aku-600/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-4 h-4 text-aku-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <div className="w-8 h-8 rounded-xl bg-gold-600/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-gold-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -175,8 +175,8 @@ function SportModal({ sport, onClose }) {
             <ul className="space-y-2">
               {(details.rules || []).map((rule, i) => (
                 <li key={i} className="flex items-start gap-2.5">
-                  <div className="w-4 h-4 rounded-full bg-aku-600/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-2.5 h-2.5 text-aku-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <div className="w-4 h-4 rounded-full bg-gold-600/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-2.5 h-2.5 text-gold-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -187,11 +187,11 @@ function SportModal({ sport, onClose }) {
           </div>
 
           {/* Eligibility note */}
-          <div className="flex items-start gap-3 bg-aku-600/8 border border-aku-600/20 rounded-2xl p-4">
-            <svg className="w-4 h-4 text-aku-700 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="flex items-start gap-3 bg-gold-600/8 border border-gold-600/20 rounded-2xl p-4">
+            <svg className="w-4 h-4 text-gold-700 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <p className="text-sm text-aku-800">Players must be enrolled students aged 18–25. Valid CNIC and student ID required at registration.</p>
+            <p className="text-sm text-gold-800">Players must be enrolled students aged 18–25. Valid CNIC and student ID required at registration.</p>
           </div>
         </div>
 
@@ -200,7 +200,7 @@ function SportModal({ sport, onClose }) {
           <a
             href="/login"
             onClick={(e) => { e.preventDefault(); onClose(); setTimeout(() => window.location.href = '/login', 200); }}
-            className="btn btn-lg bg-aku-600 text-white hover:bg-aku-500 w-full justify-center cursor-pointer"
+            className="btn btn-lg bg-gold-600 text-white hover:bg-gold-500 w-full justify-center cursor-pointer"
           >
             Register for {sport.name}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -225,7 +225,7 @@ function NavBar({ navigate }) {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-aku-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow">
+          <div className="w-10 h-10 bg-gold-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-glow">
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
             </svg>
@@ -245,7 +245,7 @@ function NavBar({ navigate }) {
           </button>
           <button
             onClick={() => navigate('/admin/login')}
-            className="btn btn-sm bg-aku-600 text-white hover:bg-aku-500 active:scale-[0.97] shadow-glow"
+            className="btn btn-sm bg-gold-600 text-white hover:bg-gold-500 active:scale-[0.97] shadow-glow"
           >
             Admin Login
           </button>
@@ -263,17 +263,17 @@ function HeroSection({ navigate }) {
     <section className="relative min-h-screen bg-surface-900 overflow-hidden flex flex-col">
       {/* BG layers */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(0,103,71,0.35),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(217,119,6,0.18),transparent)]" />
         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-dot-grid opacity-15" />
       </div>
 
       {/* Left accent line */}
-      <div className="absolute top-0 left-0 w-1 h-full bg-aku-600 opacity-80" />
+      <div className="absolute top-0 left-0 w-1 h-full bg-gold-600 opacity-80" />
 
       {/* Large watermark */}
       <div
         className="absolute bottom-8 right-0 leading-none select-none pointer-events-none overflow-hidden"
-        style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(10rem,22vw,20rem)', color: 'rgba(0,103,71,0.10)', lineHeight: 1 }}
+        style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(10rem,22vw,20rem)', color: 'rgba(217,119,6,0.08)', lineHeight: 1 }}
         aria-hidden="true"
       >
         2026
@@ -288,8 +288,8 @@ function HeroSection({ navigate }) {
             <div className="lg:max-w-2xl">
               {/* Badge */}
               <motion.div variants={fadeUp} className="mb-8">
-                <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-aku-600/20 border border-aku-600/40 text-aku-300 text-sm font-semibold">
-                  <span className="w-2 h-2 rounded-full bg-aku-400 animate-pulse" />
+                <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-gold-600/20 border border-gold-600/40 text-gold-300 text-sm font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
                   Registrations Open — Deadline Feb 28, 2026
                 </span>
               </motion.div>
@@ -299,7 +299,7 @@ function HeroSection({ navigate }) {
                 <h1 className="font-display text-white leading-none mb-2" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)' }}>
                   AKU
                 </h1>
-                <h1 className="font-display leading-none mb-2" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)', color: '#45ae86' }}>
+                <h1 className="font-display leading-none mb-2" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)', color: '#d97706' }}>
                   SPORTS
                 </h1>
                 <h1 className="font-display text-white leading-none" style={{ fontSize: 'clamp(3.5rem,8vw,8rem)' }}>
@@ -346,7 +346,7 @@ function HeroSection({ navigate }) {
               <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
                 <motion.button
                   onClick={() => navigate('/login')}
-                  className="btn btn-lg bg-aku-600 text-white hover:bg-aku-500 active:scale-[0.97] group"
+                  className="btn btn-lg bg-gold-600 text-white hover:bg-gold-500 active:scale-[0.97] group"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -405,9 +405,9 @@ function HeroSection({ navigate }) {
                 ))}
               </div>
               {/* Mar 15 label */}
-              <div className="mt-6 px-5 py-3 bg-aku-600/15 border border-aku-600/30 rounded-2xl flex items-center gap-2 self-stretch justify-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-aku-400 animate-pulse flex-shrink-0" />
-                <span className="text-sm text-aku-300 font-semibold">March 15, 2026 · AKU Karachi</span>
+              <div className="mt-6 px-5 py-3 bg-gold-600/15 border border-gold-600/30 rounded-2xl flex items-center gap-2 self-stretch justify-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse flex-shrink-0" />
+                <span className="text-sm text-gold-300 font-semibold">March 15, 2026 · AKU Karachi</span>
               </div>
             </motion.div>
 
@@ -477,13 +477,13 @@ function SportsGrid() {
               whileHover={{ y: -4, transition: { duration: 0.2, ease } }}
               whileTap={{ scale: 0.97 }}
               onClick={() => setSelected(sport)}
-              className="group relative bg-white border-2 border-surface-100 rounded-2xl p-5 cursor-pointer hover:border-aku-300 hover:shadow-card-lg transition-all duration-300 overflow-hidden text-left"
+              className="group relative bg-white border-2 border-surface-100 rounded-2xl p-5 cursor-pointer hover:border-gold-300 hover:shadow-card-lg transition-all duration-300 overflow-hidden text-left"
             >
               {/* Hover tint */}
-              <div className="absolute inset-0 bg-aku-600 opacity-0 group-hover:opacity-[0.02] transition-opacity duration-300 rounded-2xl" />
+              <div className="absolute inset-0 bg-gold-600 opacity-0 group-hover:opacity-[0.02] transition-opacity duration-300 rounded-2xl" />
               {/* Index watermark */}
               <span
-                className="absolute top-3 right-4 font-display leading-none select-none text-surface-100 group-hover:text-aku-100 transition-colors duration-300"
+                className="absolute top-3 right-4 font-display leading-none select-none text-surface-100 group-hover:text-gold-100 transition-colors duration-300"
                 style={{ fontSize: '3.5rem' }}
                 aria-hidden="true"
               >
@@ -496,11 +496,11 @@ function SportsGrid() {
                     {SPORT_EMOJI[sport.id]}
                   </span>
                 </div>
-                <p className="font-semibold text-surface-900 text-base mb-0.5 group-hover:text-aku-700 transition-colors duration-200">{sport.name}</p>
+                <p className="font-semibold text-surface-900 text-base mb-0.5 group-hover:text-gold-700 transition-colors duration-200">{sport.name}</p>
                 <p className="text-xs text-surface-400">{sport.maxPlayers} players max</p>
                 <div className="mt-4 pt-4 border-t border-surface-100 flex items-center justify-between">
-                  <span className="text-sm font-bold text-aku-700">PKR {SPORT_FEES[sport.id]?.toLocaleString()}</span>
-                  <svg className="w-4 h-4 text-surface-300 group-hover:text-aku-500 group-hover:translate-x-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <span className="text-sm font-bold text-gold-700">PKR {SPORT_FEES[sport.id]?.toLocaleString()}</span>
+                  <svg className="w-4 h-4 text-surface-300 group-hover:text-gold-500 group-hover:translate-x-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -547,21 +547,22 @@ function HowToRegister({ navigate }) {
   ];
 
   return (
-    <section className="py-28 bg-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-surface-200 to-transparent" />
+    <section className="py-28 bg-surface-900 relative overflow-hidden">
+      <div className="absolute inset-0 bg-dot-grid opacity-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-600/40 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <InView>
           <div className="flex items-end justify-between mb-16 gap-4 flex-wrap">
             <div>
-              <p className="section-label mb-3">Step-by-Step</p>
-              <h2 className="font-display leading-none text-surface-900" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)' }}>
+              <p className="section-label mb-3 text-gold-400">Step-by-Step</p>
+              <h2 className="font-display leading-none text-white" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)' }}>
                 HOW TO REGISTER
               </h2>
             </div>
             <motion.button
               onClick={() => navigate('/login')}
-              className="btn btn-md bg-aku-600 text-white hover:bg-aku-500 active:scale-[0.97]"
+              className="btn btn-md bg-gold-600 text-white hover:bg-gold-500 active:scale-[0.97]"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -575,40 +576,40 @@ function HowToRegister({ navigate }) {
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative">
           {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[calc(33.33%+1.5rem)] right-[calc(33.33%+1.5rem)] h-px bg-surface-200 z-0" />
+          <div className="hidden md:block absolute top-10 left-[calc(33.33%+1.5rem)] right-[calc(33.33%+1.5rem)] h-px bg-white/15 z-0" />
 
           {steps.map((step, i) => (
             <InView key={i} delay={i * 0.1}>
               <motion.div
-                className="relative bg-white border-2 border-surface-100 rounded-3xl p-8 hover:border-aku-200 hover:shadow-card-lg transition-all duration-300 group"
+                className="relative bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-gold-500/40 hover:bg-white/8 transition-all duration-300 group"
                 whileHover={{ y: -4, transition: { duration: 0.2, ease } }}
               >
                 {/* Step number bubble */}
-                <div className="relative z-10 w-12 h-12 rounded-2xl bg-aku-600 flex items-center justify-center mb-6 group-hover:shadow-glow transition-shadow duration-300">
+                <div className="relative z-10 w-12 h-12 rounded-2xl bg-gold-600 flex items-center justify-center mb-6 group-hover:shadow-glow transition-shadow duration-300">
                   <span className="font-display text-white text-xl leading-none">{step.num}</span>
                 </div>
 
                 {/* Watermark number */}
                 <span
-                  className="absolute top-4 right-5 font-display text-surface-50 leading-none select-none pointer-events-none group-hover:text-aku-50 transition-colors duration-300"
+                  className="absolute top-4 right-5 font-display text-white/5 leading-none select-none pointer-events-none group-hover:text-gold-600/10 transition-colors duration-300"
                   style={{ fontSize: '4.5rem' }}
                   aria-hidden="true"
                 >
                   {step.num}
                 </span>
 
-                <div className="w-10 h-10 rounded-xl bg-aku-600/8 flex items-center justify-center mb-4">
-                  <svg className="w-5 h-5 text-aku-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                <div className="w-10 h-10 rounded-xl bg-gold-600/15 flex items-center justify-center mb-4">
+                  <svg className="w-5 h-5 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={step.icon} />
                   </svg>
                 </div>
 
-                <h3 className="font-display text-surface-900 text-2xl leading-tight mb-3 group-hover:text-aku-700 transition-colors duration-200">
+                <h3 className="font-display text-white text-2xl leading-tight mb-3 group-hover:text-gold-300 transition-colors duration-200">
                   {step.title.toUpperCase()}
                 </h3>
-                <p className="text-sm text-surface-500 leading-relaxed mb-4">{step.desc}</p>
-                <div className="pt-4 border-t border-surface-100">
-                  <p className="text-xs text-surface-400 italic leading-relaxed">{step.detail}</p>
+                <p className="text-sm text-surface-400 leading-relaxed mb-4">{step.desc}</p>
+                <div className="pt-4 border-t border-white/10">
+                  <p className="text-xs text-surface-500 italic leading-relaxed">{step.detail}</p>
                 </div>
               </motion.div>
             </InView>
@@ -634,7 +635,7 @@ function Downloads() {
       desc: 'Step-by-step guide for sports coordinators on registering university teams.',
       size: '1.1 MB · PDF',
       icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2',
-      color: 'bg-aku-600',
+      color: 'bg-gold-600',
     },
     {
       title: 'Code of Conduct',
@@ -661,17 +662,17 @@ function Downloads() {
   };
 
   return (
-    <section className="py-28 bg-surface-50 relative overflow-hidden">
+    <section className="py-28 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-surface-200 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <InView>
           <div className="mb-16">
             <p className="section-label mb-3">Resources</p>
             <h2 className="font-display leading-none text-surface-900" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)' }}>
               DOWNLOADS
             </h2>
-            <p className="text-surface-400 text-base mt-4 max-w-lg leading-relaxed">
+            <p className="text-surface-500 text-base mt-4 max-w-lg leading-relaxed">
               All official documents for AKU Olympiad 2026. Download rulebooks, guidelines, and forms before registering.
             </p>
           </div>
@@ -681,7 +682,7 @@ function Downloads() {
           {files.map((file, i) => (
             <InView key={i} delay={i * 0.08}>
               <motion.div
-                className="group bg-white border-2 border-surface-100 rounded-3xl p-6 hover:border-surface-200 hover:shadow-card-lg transition-all duration-300 flex flex-col"
+                className="group bg-white border-2 border-surface-100 rounded-3xl p-6 hover:border-gold-200 hover:shadow-card-lg transition-all duration-300 flex flex-col"
                 whileHover={{ y: -3, transition: { duration: 0.2, ease } }}
               >
                 {/* Icon */}
@@ -691,7 +692,7 @@ function Downloads() {
                   </svg>
                 </div>
 
-                <h3 className="font-semibold text-surface-900 text-base mb-2 leading-snug group-hover:text-aku-700 transition-colors duration-200">
+                <h3 className="font-semibold text-surface-900 text-base mb-2 leading-snug group-hover:text-gold-700 transition-colors duration-200">
                   {file.title}
                 </h3>
                 <p className="text-xs text-surface-400 leading-relaxed mb-5 flex-1">{file.desc}</p>
@@ -700,7 +701,7 @@ function Downloads() {
                   <span className="text-xs text-surface-400 font-mono">{file.size}</span>
                   <motion.button
                     onClick={() => handleDownload(file.title)}
-                    className="btn btn-sm bg-surface-50 text-surface-700 border border-surface-200 hover:bg-aku-600 hover:text-white hover:border-aku-600 transition-all duration-200 cursor-pointer"
+                    className="btn btn-sm bg-surface-50 text-surface-700 border border-surface-200 hover:bg-gold-600 hover:text-white hover:border-gold-600 transition-all duration-200 cursor-pointer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     aria-label={`Download ${file.title}`}
@@ -725,14 +726,14 @@ function InfoSection() {
   return (
     <section className="py-28 bg-surface-900 relative overflow-hidden">
       <div className="absolute inset-0 bg-dot-grid opacity-10 pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-aku-600/50 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-600/50 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Eligibility */}
           <div>
             <InView>
-              <p className="section-label mb-3 text-aku-400">Who Can Participate</p>
+              <p className="section-label mb-3 text-gold-400">Who Can Participate</p>
               <h2 className="font-display text-white mb-10" style={{ fontSize: 'clamp(2rem,4vw,3.5rem)' }}>
                 ELIGIBILITY
               </h2>
@@ -742,10 +743,10 @@ function InfoSection() {
                 <InView key={i} delay={i * 0.06}>
                   <li className="flex items-start gap-4 group">
                     <motion.div
-                      className="mt-0.5 w-6 h-6 rounded-lg bg-aku-600/20 border border-aku-600/40 flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:bg-aku-600 group-hover:border-aku-600"
+                      className="mt-0.5 w-6 h-6 rounded-lg bg-gold-600/20 border border-gold-600/40 flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:bg-gold-600 group-hover:border-gold-600"
                       whileHover={{ scale: 1.1 }}
                     >
-                      <svg className="w-3.5 h-3.5 text-aku-400 group-hover:text-white transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <svg className="w-3.5 h-3.5 text-gold-400 group-hover:text-white transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </motion.div>
@@ -759,7 +760,7 @@ function InfoSection() {
           {/* Announcements */}
           <div>
             <InView>
-              <p className="section-label mb-3 text-aku-400">Latest Updates</p>
+              <p className="section-label mb-3 text-gold-400">Latest Updates</p>
               <h2 className="font-display text-white mb-10" style={{ fontSize: 'clamp(2rem,4vw,3.5rem)' }}>
                 ANNOUNCEMENTS
               </h2>
@@ -772,12 +773,12 @@ function InfoSection() {
                     whileHover={{ backgroundColor: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.18)', y: -2 }}
                   >
                     <div className="flex items-center justify-between gap-3 mb-3">
-                      <span className="text-xs font-semibold text-aku-400 font-mono">
+                      <span className="text-xs font-semibold text-gold-400 font-mono">
                         {new Date(a.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                       </span>
                       {i === 0 && (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-aku-600/20 border border-aku-600/30 text-aku-400 text-xs font-semibold">
-                          <span className="w-1.5 h-1.5 rounded-full bg-aku-400 animate-pulse" />
+                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-gold-600/20 border border-gold-600/30 text-gold-400 text-xs font-semibold">
+                          <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
                           New
                         </span>
                       )}
@@ -805,10 +806,10 @@ function KeyDates() {
   ];
 
   return (
-    <section className="py-28 bg-white relative overflow-hidden">
+    <section className="py-28 bg-surface-50 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-surface-200 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <InView>
           <div className="mb-16">
             <p className="section-label mb-3">Timeline</p>
@@ -823,8 +824,8 @@ function KeyDates() {
             <InView key={i} delay={i * 0.08}>
               <motion.div
                 className={`relative rounded-2xl p-7 border-2 overflow-hidden h-full min-h-[200px] flex flex-col justify-between ${
-                  d.status === 'done'   ? 'bg-aku-600   border-aku-600   text-white' :
-                  d.status === 'active' ? 'bg-surface-900 border-surface-800 text-white' :
+                  d.status === 'done'   ? 'bg-gold-600    border-gold-600   text-white' :
+                  d.status === 'active' ? 'bg-surface-900 border-surface-900 text-white' :
                   'bg-white border-surface-200 text-surface-700'
                 }`}
                 whileHover={{ y: -3, transition: { duration: 0.2, ease } }}
@@ -844,7 +845,7 @@ function KeyDates() {
                 <div className="relative z-10">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-6 text-base ${
                     d.status === 'done'   ? 'bg-white/20' :
-                    d.status === 'active' ? 'bg-aku-600' :
+                    d.status === 'active' ? 'bg-gold-600' :
                     'bg-surface-100'
                   }`}>
                     {d.status === 'done' ? (
@@ -864,15 +865,17 @@ function KeyDates() {
                   <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${
                     d.status === 'upcoming' ? 'text-surface-400' : 'opacity-60'
                   }`}>{d.label}</p>
-                  <p className={`font-display text-2xl leading-none ${d.status === 'upcoming' ? 'text-surface-800' : ''}`}>
+                  <p className={`font-display text-2xl leading-none ${
+                    d.status === 'upcoming' ? 'text-surface-800' : ''
+                  }`}>
                     {d.date}
                   </p>
                 </div>
 
                 {d.status === 'active' && (
                   <div className="relative z-10 mt-4 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-aku-400 animate-pulse" />
-                    <span className="text-xs font-semibold text-aku-400">Currently Active</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
+                    <span className="text-xs font-semibold text-gold-400">Currently Active</span>
                   </div>
                 )}
               </motion.div>
@@ -889,17 +892,17 @@ function CTASection({ navigate }) {
   return (
     <section className="py-28 bg-surface-900 relative overflow-hidden">
       <div className="absolute inset-0 bg-dot-grid opacity-10 pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-aku-600/60 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-aku-600/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-600/60 to-transparent" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold-600/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           {/* Left */}
           <div className="lg:col-span-3">
             <InView>
-              <p className="section-label text-aku-400 mb-4">Ready to Compete?</p>
+              <p className="section-label text-gold-400 mb-4">Ready to Compete?</p>
               <h2 className="font-display text-white leading-none mb-6" style={{ fontSize: 'clamp(2.5rem,7vw,6rem)' }}>
-                REGISTER YOUR<br /><span style={{ color: '#45ae86' }}>UNIVERSITY</span><br />TODAY
+                REGISTER YOUR<br /><span style={{ color: '#d97706' }}>UNIVERSITY</span><br />TODAY
               </h2>
               <p className="text-surface-400 text-lg mb-8 leading-relaxed max-w-lg">
                 Spots are limited. Secure your university's place in Pakistan's biggest inter-university sports championship before the deadline.
@@ -909,7 +912,7 @@ function CTASection({ navigate }) {
               <div className="flex flex-wrap gap-4">
                 <motion.button
                   onClick={() => navigate('/login')}
-                  className="btn btn-lg bg-aku-600 text-white hover:bg-aku-500 active:scale-[0.97] shadow-glow-lg group"
+                  className="btn btn-lg bg-gold-600 text-white hover:bg-gold-500 active:scale-[0.97] shadow-glow-lg group"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -947,8 +950,8 @@ function CTASection({ navigate }) {
                     transition={{ delay: i * 0.1 + 0.2, duration: 0.5, ease }}
                     className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 hover:bg-white/8 hover:border-white/18 transition-all duration-200"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-aku-600/20 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-aku-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <div className="w-10 h-10 rounded-xl bg-gold-600/20 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d={c.icon} />
                       </svg>
                     </div>
@@ -964,16 +967,199 @@ function CTASection({ navigate }) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, duration: 0.5, ease }}
-                  className="flex items-center gap-3 bg-aku-600/15 border border-aku-600/30 rounded-2xl p-4"
+                  className="flex items-center gap-3 bg-gold-600/15 border border-gold-600/30 rounded-2xl p-4"
                 >
-                  <span className="w-2 h-2 rounded-full bg-aku-400 animate-pulse flex-shrink-0" />
-                  <p className="text-sm text-aku-300 font-semibold">Registration closes <span className="text-white">Feb 28, 2026</span></p>
+                  <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse flex-shrink-0" />
+                  <p className="text-sm text-gold-300 font-semibold">Registration closes <span className="text-white">Feb 28, 2026</span></p>
                 </motion.div>
               </div>
             </InView>
           </div>
         </div>
       </div>
+    </section>
+  );
+}
+
+// ── Sponsors ─────────────────────────────────────────────────
+function Sponsors() {
+  const sponsors = [
+    { name: 'Aga Khan Health Services', tier: 'Platinum', abbr: 'AKHS', color: 'bg-surface-900', text: 'text-white' },
+    { name: 'HBL Bank',                 abbr: 'HBL'   },
+    { name: 'Pakistan Sports Board',    abbr: 'PSB'   },
+    { name: 'PepsiCo Pakistan',         abbr: 'PEPSI' },
+    { name: 'Haier Pakistan',           abbr: 'HAIER' },
+    { name: 'PTCL',                     abbr: 'PTCL'  },
+    { name: 'Jazz Telecom',             abbr: 'JAZZ'  },
+    { name: 'Engro Corporation',        abbr: 'ENGRO' },
+  ];
+
+  // Double the list for seamless loop
+  const track = [...sponsors, ...sponsors];
+
+  return (
+    <section className="py-16 bg-white relative overflow-hidden border-t border-surface-100">
+
+      {/* Header */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-10">
+        <InView>
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="section-label mb-1">Proudly Supported By</p>
+              <h2 className="font-display leading-none text-surface-900" style={{ fontSize: 'clamp(1.8rem,4vw,3rem)' }}>
+                OUR SPONSORS
+              </h2>
+            </div>
+            <a
+              href="mailto:olympiad@aku.edu"
+              className="btn btn-sm btn-primary flex-shrink-0"
+            >
+              Become a Sponsor
+            </a>
+          </div>
+        </InView>
+      </div>
+
+      {/* Marquee track — fade edges */}
+      <div className="relative overflow-hidden">
+        {/* Left fade */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        {/* Right fade */}
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
+        <div className="flex animate-marquee" style={{ width: 'max-content' }}>
+          {track.map((sp, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 mx-4 flex flex-col items-center justify-center gap-1.5 bg-surface-50 border-2 border-surface-100 rounded-2xl px-8 py-5 min-w-[140px] hover:border-gold-300 hover:bg-gold-50 transition-all duration-200 cursor-default"
+            >
+              <span className="font-display text-surface-900 text-2xl leading-none tracking-wide">{sp.abbr}</span>
+              <span className="text-xs text-surface-400 font-semibold text-center leading-tight">{sp.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ── Gallery ───────────────────────────────────────────────────
+function Gallery() {
+  const [zoomImg, setZoomImg] = useState(null);
+
+  // 6 photos in a clean 3-column grid — no odd spans
+  const photos = [
+    { src: 'https://placehold.co/600x400/1c1917/d97706?text=Cricket+Finals+2025',         label: 'Cricket Finals 2025'           },
+    { src: 'https://placehold.co/600x400/292524/fbbf24?text=Basketball+Championship',     label: 'Basketball Championship'       },
+    { src: 'https://placehold.co/600x400/44403c/f59e0b?text=Athletics+100m+Sprint',       label: 'Athletics — 100m Sprint'       },
+    { src: 'https://placehold.co/600x400/1c1917/d97706?text=Football+Semi-Final',         label: 'Football Semi-Final'           },
+    { src: 'https://placehold.co/600x400/0c0a09/fbbf24?text=Opening+Ceremony+AKU+2025',  label: 'Opening Ceremony — AKU 2025'  },
+    { src: 'https://placehold.co/600x400/292524/d97706?text=Volleyball+Showdown',         label: 'Volleyball Showdown'           },
+  ];
+
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape') setZoomImg(null); };
+    if (zoomImg) {
+      document.addEventListener('keydown', handleKey);
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.removeEventListener('keydown', handleKey);
+      document.body.style.overflow = '';
+    };
+  }, [zoomImg]);
+
+  return (
+    <section className="py-28 bg-surface-50 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-surface-200 to-transparent" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <InView>
+          <div className="flex items-end justify-between mb-14 gap-4 flex-wrap">
+            <div>
+              <p className="section-label mb-3">Highlights</p>
+              <h2 className="font-display leading-none text-surface-900" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)' }}>
+                GALLERY
+              </h2>
+            </div>
+            <p className="text-surface-400 text-sm max-w-xs text-right leading-relaxed">
+              Glimpses from past editions.<br />Click any photo to enlarge.
+            </p>
+          </div>
+        </InView>
+
+        <motion.div
+          variants={staggerFast}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-60px' }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          {photos.map((photo, i) => (
+            <motion.button
+              key={i}
+              variants={fadeUp}
+              onClick={() => setZoomImg(photo)}
+              className="group relative overflow-hidden rounded-2xl cursor-zoom-in aspect-[3/2]"
+              whileHover={{ scale: 1.01, transition: { duration: 0.25, ease } }}
+              aria-label={`View photo: ${photo.label}`}
+            >
+              <img
+                src={photo.src}
+                alt={photo.label}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-surface-900/0 group-hover:bg-surface-900/50 transition-colors duration-300" />
+              {/* Bottom label */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-surface-900/80 to-transparent translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                <p className="text-white text-sm font-semibold leading-tight">{photo.label}</p>
+              </div>
+              {/* Zoom icon */}
+              <div className="absolute top-3 right-3 w-8 h-8 bg-black/30 backdrop-blur-sm rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0015.803 15.803zM10.5 7.5v6m3-3h-6" />
+                </svg>
+              </div>
+            </motion.button>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {zoomImg && (
+          <motion.div
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-surface-950/92 backdrop-blur-sm"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            onClick={() => setZoomImg(null)}
+            role="dialog" aria-label={zoomImg.label}
+          >
+            <motion.div
+              className="relative max-w-4xl w-full"
+              initial={{ scale: 0.92, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.92, y: 20 }}
+              transition={{ duration: 0.3, ease }}
+              onClick={e => e.stopPropagation()}
+            >
+              <img src={zoomImg.src} alt={zoomImg.label} className="w-full rounded-2xl shadow-card-xl" />
+              <div className="flex items-center justify-between mt-3 px-1">
+                <p className="text-white font-semibold text-sm">{zoomImg.label}</p>
+                <button
+                  onClick={() => setZoomImg(null)}
+                  className="flex items-center gap-1.5 text-surface-400 hover:text-white text-sm transition-colors duration-150 cursor-pointer"
+                  aria-label="Close"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  Close
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
@@ -993,19 +1179,68 @@ export default function HomePage() {
         <InfoSection />
         <KeyDates />
         <Downloads />
+        <Sponsors />
+        <Gallery />
         <CTASection navigate={navigate} />
       </main>
-      <footer className="bg-surface-900 border-t border-white/10 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div className="w-7 h-7 bg-aku-600 rounded-lg flex items-center justify-center">
-              <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-              </svg>
+      <footer className="bg-surface-950 border-t border-white/8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Brand */}
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 bg-gold-600 rounded-xl flex items-center justify-center shadow-glow">
+                <svg className="w-4.5 h-4.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-display text-white text-base tracking-wide leading-none">AKU OLYMPIAD 2026</p>
+                <p className="text-xs text-surface-500 mt-0.5">Aga Khan University, Karachi</p>
+              </div>
             </div>
-            <span className="font-display text-surface-400 text-sm tracking-wide">AKU OLYMPIAD 2026</span>
+
+            {/* Social links */}
+            <div className="flex items-center gap-3">
+              {[
+                {
+                  label: 'Instagram',
+                  href: '#',
+                  icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z',
+                },
+                {
+                  label: 'Twitter / X',
+                  href: '#',
+                  icon: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z',
+                },
+                {
+                  label: 'Facebook',
+                  href: '#',
+                  icon: 'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z',
+                },
+                {
+                  label: 'YouTube',
+                  href: '#',
+                  icon: 'M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z',
+                },
+              ].map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="w-9 h-9 rounded-xl bg-white/8 hover:bg-gold-600 flex items-center justify-center transition-all duration-200 cursor-pointer group"
+                >
+                  <svg className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors duration-200" viewBox="0 0 24 24" fill="currentColor">
+                    <path d={s.icon} />
+                  </svg>
+                </a>
+              ))}
+            </div>
           </div>
-          <p className="text-xs text-surface-600">© 2026 Aga Khan University, Karachi. All rights reserved.</p>
+
+          <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p className="text-xs text-surface-600">© 2026 Aga Khan University, Karachi. All rights reserved.</p>
+            <p className="text-xs text-surface-700">olympiad@aku.edu · +92-21-3486-4400</p>
+          </div>
         </div>
       </footer>
     </div>

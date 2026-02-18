@@ -17,6 +17,48 @@ const FILTERS = [
   { id: 'verified',  label: 'Verified'       },
 ];
 
+function exportCSV(registrations) {
+  const rows = [
+    ['Registration ID', 'University', 'Sport', 'Player Name', 'Date of Birth', 'CNIC', 'Player Status', 'Rejection Reason', 'Registration Status', 'Submitted At', 'Total Fee (PKR)'],
+  ];
+  registrations.forEach(reg => {
+    reg.sports.forEach(sportId => {
+      const players = reg.players[sportId] || [];
+      if (!players.length) {
+        rows.push([reg.id, reg.universityName, sportId, '—', '—', '—', '—', '—', reg.status, reg.submittedAt || '', reg.totalAmount || 0]);
+      } else {
+        players.forEach(p => {
+          rows.push([
+            reg.id,
+            reg.universityName,
+            SPORTS.find(s => s.id === sportId)?.name || sportId,
+            p.name,
+            p.dob,
+            p.cnic,
+            p.status,
+            p.rejectionReason || '',
+            reg.status,
+            reg.submittedAt ? new Date(reg.submittedAt).toLocaleDateString('en-GB') : '',
+            reg.totalAmount || 0,
+          ]);
+        });
+      }
+    });
+  });
+
+  const csv = rows.map(row =>
+    row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')
+  ).join('\r\n');
+
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `aku-olympiad-registrations-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 export default function AdminDashboard() {
   const navigate = useNavigate();
   const user = getCurrentUser();
@@ -36,7 +78,7 @@ export default function AdminDashboard() {
   const stats = [
     { label: 'Total Received', value: registrations.filter(r => r.status !== 'draft').length, color: 'text-surface-900', icon: '📥' },
     { label: 'Pending Review', value: registrations.filter(r => r.status === 'submitted').length, color: 'text-amber-600', icon: '⏳' },
-    { label: 'Verified',       value: registrations.filter(r => r.status === 'verified').length,  color: 'text-aku-600',   icon: '✅' },
+    { label: 'Verified',       value: registrations.filter(r => r.status === 'verified').length,  color: 'text-gold-600',  icon: '✅' },
     { label: 'Total Players',  value: registrations.reduce((s, r) => s + Object.values(r.players).flat().length, 0), color: 'text-blue-600', icon: '👥' },
   ];
 
@@ -46,11 +88,26 @@ export default function AdminDashboard() {
 
         {/* Header */}
         <motion.div variants={stagger} initial="hidden" animate="show" className="mb-8">
-          <motion.div variants={fadeUp}>
-            <p className="section-label mb-2">Administration</p>
-            <h1 className="font-display text-surface-900 leading-none" style={{ fontSize: '2.5rem' }}>
-              REGISTRATION MANAGEMENT
-            </h1>
+          <motion.div variants={fadeUp} className="flex items-start justify-between gap-4 flex-wrap">
+            <div>
+              <p className="section-label mb-2">Administration</p>
+              <h1 className="font-display text-surface-900 leading-none" style={{ fontSize: '2.5rem' }}>
+                REGISTRATION MANAGEMENT
+              </h1>
+            </div>
+            {!loading && registrations.length > 0 && (
+              <motion.button
+                onClick={() => exportCSV(registrations.filter(r => r.status !== 'draft'))}
+                className="btn btn-md bg-surface-900 text-white hover:bg-surface-800 active:scale-[0.97]"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Export to Excel
+              </motion.button>
+            )}
           </motion.div>
         </motion.div>
 

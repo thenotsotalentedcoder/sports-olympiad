@@ -128,7 +128,7 @@ export default function RegistrationForm() {
             {/* Step 1 — Select Sports */}
             <div className="card overflow-hidden">
               <div className="px-6 py-4 border-b border-surface-100 flex items-center gap-3">
-                <div className="w-7 h-7 rounded-full bg-aku-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">1</div>
+                <div className="w-7 h-7 rounded-full bg-gold-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">1</div>
                 <h2 className="font-display text-xl text-surface-900">SELECT SPORTS</h2>
               </div>
               <div className="p-6">
@@ -141,12 +141,12 @@ export default function RegistrationForm() {
                         onClick={() => toggleSport(sport.id)}
                         className={`group relative p-4 rounded-xl border-2 text-left transition-all duration-200 ease-smooth cursor-pointer ${
                           selected
-                            ? 'border-aku-600 bg-aku-50 shadow-glow'
+                            ? 'border-gold-600 bg-gold-50 shadow-glow'
                             : 'border-surface-200 bg-white hover:border-surface-300 hover:bg-surface-50'
                         }`}
                       >
                         {selected && (
-                          <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-aku-600 flex items-center justify-center">
+                          <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-gold-600 flex items-center justify-center">
                             <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
@@ -155,7 +155,7 @@ export default function RegistrationForm() {
                         <div className={`w-12 h-12 rounded-2xl ${sport.bgColor} flex items-center justify-center mb-3 shadow-sm transition-transform duration-200 group-hover:scale-105`}>
                           <span style={{ fontSize: '1.5rem', lineHeight: 1 }}>{SPORT_EMOJI_MAP[sport.id]}</span>
                         </div>
-                        <p className={`font-semibold text-sm mb-0.5 leading-tight ${selected ? 'text-aku-800' : 'text-surface-800'}`}>{sport.name}</p>
+                        <p className={`font-semibold text-sm mb-0.5 leading-tight ${selected ? 'text-gold-800' : 'text-surface-800'}`}>{sport.name}</p>
                         <p className="text-xs text-surface-500">PKR {SPORT_FEES[sport.id].toLocaleString()}</p>
                       </button>
                     );
@@ -176,7 +176,7 @@ export default function RegistrationForm() {
                   className="card overflow-hidden"
                 >
                   <div className="px-6 py-4 border-b border-surface-100 flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-full bg-aku-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</div>
+                    <div className="w-7 h-7 rounded-full bg-gold-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</div>
                     <h2 className="font-display text-xl text-surface-900">ADD PLAYERS</h2>
                   </div>
                   <div className="p-6">
@@ -210,7 +210,7 @@ export default function RegistrationForm() {
                     {activeSport && (
                       <div className="bg-surface-50 border border-surface-200 rounded-2xl p-5 mb-5">
                         <p className="text-sm font-semibold text-surface-700 mb-4">
-                          Adding player for <strong className="text-aku-700">{SPORTS.find(s => s.id === activeSport)?.name}</strong>
+                          Adding player for <strong className="text-gold-700">{SPORTS.find(s => s.id === activeSport)?.name}</strong>
                         </p>
                         <div className="grid sm:grid-cols-3 gap-4 mb-4">
                           <div>
@@ -321,7 +321,7 @@ export default function RegistrationForm() {
                   })}
                   <div className="flex justify-between pt-3 border-t border-surface-100">
                     <span className="font-bold text-surface-900">Total</span>
-                    <span className="font-display text-2xl text-aku-700 leading-none">PKR {totalFee.toLocaleString()}</span>
+                    <span className="font-display text-2xl text-gold-700 leading-none">PKR {totalFee.toLocaleString()}</span>
                   </div>
                 </div>
               )}

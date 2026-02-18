@@ -42,7 +42,7 @@ export default function Login({ isAdmin = false }) {
   return (
     <div className="min-h-screen bg-surface-900 flex overflow-hidden">
       {/* Left panel — dark brand block */}
-      <div className="hidden lg:flex lg:w-1/2 relative bg-aku-600 items-center justify-center p-16 overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 relative bg-gold-600 items-center justify-center p-16 overflow-hidden">
         <div className="absolute inset-0 bg-dot-grid opacity-10" />
         <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white/5" />
         <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-white/5" />
@@ -61,7 +61,7 @@ export default function Login({ isAdmin = false }) {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
             </div>
-            <p className="text-aku-200 text-sm font-semibold uppercase tracking-widest mb-3">AKU OLYMPIAD 2026</p>
+            <p className="text-gold-200 text-sm font-semibold uppercase tracking-widest mb-3">AKU OLYMPIAD 2026</p>
             <h1
               className="font-display text-white leading-none"
               style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}
@@ -81,7 +81,7 @@ export default function Login({ isAdmin = false }) {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-sm text-aku-100">{item}</span>
+                <span className="text-sm text-gold-100">{item}</span>
               </div>
             ))}
           </div>
@@ -98,7 +98,7 @@ export default function Login({ isAdmin = false }) {
         >
           {/* Mobile logo */}
           <motion.div variants={fadeUp} className="flex items-center gap-3 mb-10 lg:hidden">
-            <div className="w-9 h-9 bg-aku-600 rounded-xl flex items-center justify-center">
+            <div className="w-9 h-9 bg-gold-600 rounded-xl flex items-center justify-center">
               <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>

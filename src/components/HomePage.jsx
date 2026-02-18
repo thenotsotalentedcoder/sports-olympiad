@@ -575,8 +575,6 @@ function HowToRegister({ navigate }) {
         </InView>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative">
-          {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[calc(33.33%+1.5rem)] right-[calc(33.33%+1.5rem)] h-px bg-white/15 z-0" />
 
           {steps.map((step, i) => (
             <InView key={i} delay={i * 0.1}>
